@@ -1,0 +1,7 @@
+[target.'cfg(target_os = "none")']
+runner = "cargo run --package boot --"
+
+[alias]
+b = "build --target target_configs/rinix-amd64.json -Zbuild-std=core -Zbuild-std-features=compiler-builtins-mem"
+i = "run --target target_configs/rinix-amd64.json -Zbuild-std=core -Zbuild-std-features=compiler-builtins-mem -- --no-run"
+r = "run --target target_configs/rinix-amd64.json -Zbuild-std=core -Zbuild-std-features=compiler-builtins-mem"
